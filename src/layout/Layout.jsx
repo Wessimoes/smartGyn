@@ -1,22 +1,34 @@
 import React, { Component } from 'react';
-import '../layout/base/Layout.scss';
-import RaisedButton from 'material-ui/RaisedButton';
+import Header from './components/Header';
+import SideMenu from './components/SideMenu';
+import './base/Layout.css';
 
 class Layout extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Welcome to React</h2>
-        </div>
 
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-          <RaisedButton label="Default" />
-        </p>
-      </div>
-    );
-  }
+    constructor(props) {
+        super(props);
+        this.state = {
+            drawerOpen: false,
+        };
+
+    }
+
+    handleToggle = () => this.setState({ drawerOpen: !this.state.drawerOpen });
+
+    render() {
+        return (
+            <div className="teste">
+                <Header handleToggle={this.handleToggle}/>
+                <SideMenu
+                    state={this.state.drawerOpen}
+                    onRequestChange={drawerOpen => this.setState({ drawerOpen })}
+                />
+                <div className="marginTopster">
+                    {this.props.children}
+                </div>
+            </div>
+        );
+    }
 }
 
 export default Layout;

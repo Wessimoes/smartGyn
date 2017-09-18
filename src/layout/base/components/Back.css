@@ -1,0 +1,7 @@
+.appbarInterno {
+    background-color: #ffffff !important;
+}
+
+.appbarInterno > h1 {
+    color: #000 !important;
+}

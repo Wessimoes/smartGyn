@@ -1,0 +1,64 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import",
+    "flowtype"
+  ],
+  "root": true,
+  "rules": {
+    "brace-style": ["error", "stroustrup"],
+    "import/extensions": "off",
+    "import/no-absolute-path": "off",
+    "import/no-unresolved": [
+      "error",
+      {
+        // Ignore a verifica��o a partir de caminhos /componentes/
+        "ignore":
+          [
+            "\/(componentes)\/.*",
+            "\/(util)\/.*",
+            "\/(config)\/.*",
+            "\/(actions)\/.*"
+          ]
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "linebreak-style": "off",
+    "no-plusplus": "off",
+    // disallow certain syntax forms
+    // http://eslint.org/docs/rules/no-restricted-syntax
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "ForInStatement",
+        "message": "for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array."
+      },
+      {
+        "selector": "LabeledStatement",
+        "message": "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand."
+      },
+      {
+        "selector": "WithStatement",
+        "message": "`with` is disallowed in strict mode because it makes code impossible to predict and optimize."
+      }
+    ],
+    "no-unused-expressions": [
+      "error",
+      {
+        // allowShortCircuit set to true will allow you to use short circuit evaluations in your
+        // example: a && b()
+        "allowShortCircuit": true
+      }
+    ],
+    "react/prop-types": "off",
+    "react/require-default-props": "warn"
+  },
+  "settings": {
+
+  }
+}

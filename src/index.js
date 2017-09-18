@@ -1,16 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Layout from './layout/Layout';
+import { render } from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import './layout/base/index.scss';
+import baseTheme from './layout/base/baseThemes/materialTheme';
+import getMuiTheme from './layout/base/baseThemes/myTheme';
+import { Rotas } from './route/routes';
+import './layout/base/index.css';
 
-const Theme = () => (
-  <MuiThemeProvider>
-      <Layout />
-  </MuiThemeProvider>
+render(
+    (
+        <MuiThemeProvider muiTheme={getMuiTheme(baseTheme)}>
+            <Rotas />
+        </MuiThemeProvider>
+    ),
+    document.getElementById('root'),
 );
 
-
-ReactDOM.render(<Theme />, document.getElementById('root'));
 registerServiceWorker();
