@@ -49,7 +49,7 @@ class Header extends Component {
             <div>
                 <AppBar
                     onLeftIconButtonTouchTap={this.props.handleToggle}
-                    title="Title"
+                    title="Smart Gym"
                     iconElementRight={this.state.logged ? <Logged /> : <Login />}
                 />
             </div>
