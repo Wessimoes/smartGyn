@@ -30,7 +30,7 @@ export default class SideMenu extends React.Component {
             <div>
                 <Drawer
                     docked={false}
-                    width={200}
+                    width={250}
                     open={this.props.state}
                     onRequestChange={this.props.onRequestChange}
                 >

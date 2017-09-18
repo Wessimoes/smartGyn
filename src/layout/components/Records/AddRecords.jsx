@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn } from 'material-ui/Table';
+import { Table, TableHeader, TableHeaderColumn, TableRow } from 'material-ui/Table';
 import { Card, CardText } from 'material-ui/Card';
 import { BackComponent } from '../Back';
 import TextField from 'material-ui/TextField';
