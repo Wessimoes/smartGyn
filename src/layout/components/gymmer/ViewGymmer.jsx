@@ -1,11 +1,11 @@
 import React from 'react';
 import { Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn } from 'material-ui/Table';
 import { Card, CardText } from 'material-ui/Card';
-import { BackComponent } from '../Back';
-import { Col4 } from '../Grid';
+import { BackComponent } from '../ui/Back';
+import { Col4 } from '../ui/Grid';
 import { Row } from 'react-flexbox-grid';
 import RaisedButton from 'material-ui/RaisedButton';
-import { TextFieldReadOnly } from '../TextFieldReadOnly';
+import { TextFieldReadOnly } from '../ui/TextFieldReadOnly';
 
 export default class ViewRecords extends React.Component {
 

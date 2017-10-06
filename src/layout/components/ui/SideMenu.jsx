@@ -38,6 +38,9 @@ export default class SideMenu extends React.Component {
                     <Link to="/">
                         <MenuItem onClick={this.handleClose}>Início</MenuItem>
                     </Link>
+                    <Link to="/gymmer">
+                        <MenuItem onClick={this.handleClose}>Adicionar Gymmer</MenuItem>
+                    </Link>
                     <Link to="/records">
                         <MenuItem onClick={this.handleClose}>Adicionar Fichas</MenuItem>
                     </Link>

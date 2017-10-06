@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row } from 'react-flexbox-grid';
 import {Card, CardTitle, CardText} from 'material-ui/Card';
-import { Col12 } from './Grid';
+import { Col12 } from '../ui/Grid';
 
 export default class PanelHome extends React.Component {
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn } from 'material-ui/Table';
-import { Card, CardText } from 'material-ui/Card';
-import { Link } from 'react-router-dom'
-import FloatingActionButtonComponent from '../components/FloatingActionButtonComponent'
+import { Card, CardTitle, CardText } from 'material-ui/Card';
+import { Link } from 'react-router-dom';
+import FloatingActionButtonComponent from '../ui/FloatingActionButtonComponent';
 
 export default class PanelRecords extends React.Component {
 
@@ -15,6 +15,7 @@ export default class PanelRecords extends React.Component {
         return (
             <div>
                 <Card>
+                    <CardTitle title="Cadastro de gymmers" subtitle="Relação de gymmers matriculados"/>
                     <CardText>
                         <Table>
                             <TableHeader adjustForCheckbox={false} displaySelectAll={false} enableSelectAll={false}>

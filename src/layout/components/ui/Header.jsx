@@ -40,10 +40,6 @@ class Header extends Component {
         logged: true,
     };
 
-    handleChange = (event, logged) => {
-        this.setState({logged: logged});
-    };
-
     render() {
         return (
             <div>

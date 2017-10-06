@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Header from './components/Header';
-import SideMenu from './components/SideMenu';
-import './base/Layout.css';
+import Header from './components/ui/Header';
+import SideMenu from './components/ui/SideMenu';
+import './css/Layout.css';
 
 class Layout extends Component {
 

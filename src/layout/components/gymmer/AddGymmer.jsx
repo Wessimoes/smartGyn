@@ -1,9 +1,9 @@
 import React from 'react';
 import { Table, TableHeader, TableHeaderColumn, TableRow } from 'material-ui/Table';
 import { Card, CardText } from 'material-ui/Card';
-import { BackComponent } from '../Back';
+import { BackComponent } from '../ui/Back';
 import TextField from 'material-ui/TextField';
-import { Col4 } from '../Grid';
+import { Col4 } from '../ui/Grid';
 import { Row } from 'react-flexbox-grid';
 import RaisedButton from 'material-ui/RaisedButton';
 
