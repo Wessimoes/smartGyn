@@ -18,10 +18,7 @@ export default class PanelHome extends React.Component {
                         <Card style={{marginBottom: 8}}>
                             <CardTitle title="Smart Gym" subtitle="slogan massa qui" />
                             <CardText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-                                Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-                                Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
+                                Área administrativa do sistema, para a gestão das fichas dos alunos..
                             </CardText>
                         </Card>
                     </Col12>
